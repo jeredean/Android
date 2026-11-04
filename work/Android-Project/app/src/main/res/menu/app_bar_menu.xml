@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_home"
+        android:title="@string/title_home"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_fragments"
+        android:title="@string/title_fragments"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_navigation_one"
+        android:title="@string/title_navigation_one"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_about"
+        android:title="@string/title_about"
+        app:showAsAction="never" />
+</menu>

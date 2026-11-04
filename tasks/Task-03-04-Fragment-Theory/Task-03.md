@@ -1,0 +1,9 @@
+# Task 3 — Fragment theory
+
+Runnable Fragment examples are in `../../work/Task-02-Android-Fragments/` and the Android project at `../../work/Android-Project/`.
+
+1. A Fragment is a reusable, lifecycle-aware portion of an Activity UI with its own view and lifecycle. It lets one Activity host modular screens, supports reuse and flexible multi-pane layouts, and avoids using a separate Activity for every small UI region.
+2. Typical lifecycle progression: `onAttach` → `onCreate` → `onCreateView` → `onViewCreated` → `onStart` → `onResume`; when leaving: `onPause` → `onStop` → `onDestroyView` → `onDestroy` → `onDetach`. Callbacks may be skipped/repeated according to navigation and restoration. An Activity owns the window/task entry point; a Fragment is hosted by a FragmentManager and has a separate view lifecycle that can end before the Fragment object does.
+3. `onCreate()` initializes non-view fragment state. `onCreateView()` inflates/returns the UI. `onDestroyView()` marks that UI as gone while the Fragment may remain on a back stack; clear binding and view references there to avoid retaining an obsolete view hierarchy.
+4. FragmentManager locates/restores fragments and executes transactions. FragmentTransaction can `add`, `replace`, or `remove` a fragment in a container. `commit()` schedules a transaction asynchronously on the main thread; `commitNow()` executes synchronously and cannot be added to the back stack. Prefer normal `commit()` unless immediate execution is necessary and safe.
+5. `addToBackStack(name)` records a transaction so Back can reverse it. Without it, Back generally exits/pops another navigation layer rather than undoing that transaction. Use the Navigation component/back stack for app navigation and avoid adding every tab switch as a back-stack entry without a deliberate UX reason.

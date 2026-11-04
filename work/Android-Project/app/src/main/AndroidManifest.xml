@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application
+        android:allowBackup="true"
+        android:label="Android Coursework"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Coursework.Starting">
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false">
+            <meta-data android:name="com.example.coursework.startup.FirebaseBootstrapInitializer"
+                android:value="androidx.startup" />
+            <meta-data android:name="com.example.coursework.startup.AnalyticsInitializer"
+                android:value="androidx.startup" />
+            <meta-data android:name="com.example.coursework.startup.CrashReportingInitializer"
+                android:value="androidx.startup" />
+        </provider>
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Coursework.Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Coursework">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="ecouganda" android:host="reports" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

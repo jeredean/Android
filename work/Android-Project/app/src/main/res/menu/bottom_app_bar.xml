@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/eco_dashboard" android:icon="@drawable/ic_home" android:title="Home" />
+    <item android:id="@+id/uganda_connect" android:icon="@drawable/ic_layers" android:title="Services" />
+    <item android:id="@+id/patient_list" android:icon="@drawable/ic_view" android:title="Health" />
+    <item android:id="@+id/eco_reports" android:icon="@drawable/ic_layers" android:title="Reports" />
+</menu>

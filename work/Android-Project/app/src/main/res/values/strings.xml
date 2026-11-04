@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Android Coursework</string>
+    <string name="title_home">Home</string>
+    <string name="title_fragments">Fragments</string>
+    <string name="title_navigation_one">Navigation One</string>
+    <string name="title_navigation_two">Navigation Two</string>
+    <string name="title_about">About</string>
+    <string name="drawer_header_title">Android Coursework</string>
+    <string name="drawer_header_subtitle">Fragments and Material navigation</string>
+    <string name="home_heading">Coursework demonstrations</string>
+    <string name="home_body">Use the app bar menu to open Navigation One. Open the navigation drawer to reach Navigation Two and the fragment demonstration. The app starts with the Android SplashScreen API.</string>
+    <string name="fragments_heading">Task 2: Android Fragments</string>
+    <string name="first_fragment">First fragment</string>
+    <string name="second_fragment">Second fragment</string>
+    <string name="first_content">First content fragment</string>
+    <string name="second_content">Second content fragment</string>
+    <string name="navigation_one_heading">Task 5: App bar navigation</string>
+    <string name="navigation_one_body">This destination is opened from the Material app bar options menu. The app bar remains available while the fragment content changes.</string>
+    <string name="action_primary">Run action</string>
+    <string name="action_completed">Action completed</string>
+    <string name="navigation_two_heading">Task 6: Navigation drawer</string>
+    <string name="navigation_two_body">This destination is reached from the navigation drawer. The drawer uses a single checked destination group and closes after a selection.</string>
+    <string name="about_message">Android Coursework sample application</string>
+    <string name="splash_content_description">Android Coursework</string>
+</resources>

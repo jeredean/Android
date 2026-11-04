@@ -1,0 +1,19 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_nav_graph"
+    app:startDestination="@id/eco_dashboard">
+    <fragment android:id="@+id/eco_dashboard" android:name="com.example.coursework.screens.DashboardFragment" android:label="EcoUganda Dashboard" />
+    <fragment android:id="@+id/eco_projects" android:name="com.example.coursework.screens.ProjectsFragment" android:label="Projects" />
+    <fragment android:id="@+id/eco_schools" android:name="com.example.coursework.screens.SchoolsFragment" android:label="Green Schools" />
+    <fragment android:id="@+id/eco_reports" android:name="com.example.coursework.screens.ReportsFragment" android:label="Reports">
+        <argument android:name="reportId" app:argType="string" android:defaultValue="" />
+        <deepLink app:uri="ecouganda://reports/{reportId}" />
+    </fragment>
+    <fragment android:id="@+id/eco_settings" android:name="com.example.coursework.screens.SettingsFragment" android:label="Settings" />
+    <fragment android:id="@+id/uganda_connect" android:name="com.example.coursework.screens.UgandaConnectFragment" android:label="UgandaConnect" />
+    <fragment android:id="@+id/patient_list" android:name="com.example.coursework.patients.PatientListFragment" android:label="UHC Patient List" />
+    <fragment android:id="@+id/patient_detail" android:name="com.example.coursework.patients.PatientDetailFragment" android:label="Patient Summary">
+        <argument android:name="patientId" app:argType="string" />
+    </fragment>
+    <fragment android:id="@+id/pager_demo" android:name="com.example.coursework.pager.PagerDemoFragment" android:label="ViewPager2 Demo" />
+    <fragment android:id="@+id/report_form" android:name="com.example.coursework.screens.ReportFormFragment" android:label="Report a service issue" />
+</navigation>

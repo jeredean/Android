@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UHC</string>
+    <string name="patient_list_title">Patients</string>
+    <string name="patient_list_subtitle">Regional referral and health centre records</string>
+    <string name="patient_list_count">Recent patients</string>
+    <string name="patient_detail_title">Patient summary</string>
+    <string name="select_patient_title">Select a patient</string>
+    <string name="select_patient_message">Choose a patient from the list to view their summary and medical history.</string>
+    <string name="demo_data_notice">Demonstration records — not real patient data</string>
+    <string name="back">Back</string>
+</resources>
